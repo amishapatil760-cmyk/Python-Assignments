@@ -1,0 +1,9 @@
+string = input("Enter a string: ")
+
+count = 0
+
+for ch in string:
+    if ch.isalpha() and ch.lower() not in "aeiou":
+        count += 1
+
+print("Number of consonants =", count)
